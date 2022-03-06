@@ -12,12 +12,7 @@ Compilator : Mingw-w64 g++ 11.2.0
 #include <stdio.h>
 #include <stdlib.h>
 
-// #define ABS(X) (((X) > 0) ? (X) : (-X))
-#define ABS(value)          \
-int absolute(int value) {   \
-   int n = value;           \
-   n > 0 ? n : -n;          \
-}
+#define ABS(X) (((X) > 0) ? (X) : (-X))
 
 int main(void) {
    int n;
@@ -60,7 +55,7 @@ int main(void) {
 
 3. Could we rewrite the macro ABS (without using the function abs from stdlib) in
    order to avoid the problems from point 2?
-   
+
    We could rewrite it as a function.
    #define ABS(value) \
    int absolute(int value) {
