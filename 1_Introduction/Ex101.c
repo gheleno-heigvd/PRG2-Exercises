@@ -21,14 +21,15 @@ Compilator : Mingw-w64 g++ 11.2.0
 int main(void) {
 
    int n = AB;
-   printf("%<?>\n", n);
-   printf("%<?>\n", "AB");
-   printf("%<?>\n", F(A, B));
+   printf("%d\n", n);
+   printf("%s\n", "AB");   // Since there are " it is a string and the preprocessor won't do anything here
+   printf("%i\n", F(A, B));   // %i and %d both mean signed integer
 
    return EXIT_SUCCESS;
 }
 
-// Output, considering that the blocks <?> are correct
-// 12
+// Output
 // 3
-// 12
+// AB
+// 3 --> It's a 3 year because the preprocessor concatenates A with B which gives
+//       AB that is already defined as 3! Never thought this would be possible...
