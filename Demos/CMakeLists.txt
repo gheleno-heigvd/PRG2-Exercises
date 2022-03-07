@@ -1,0 +1,4 @@
+add_executable(101_visibilite_macros 101_visibilite_macros.c)
+add_executable(102_do_while 102_do_while\(0\).c)
+add_executable(103_assert 103_assert.c)
+add_executable(104_compilation_conditionnelle 104_compilation_conditionnelle.c)
