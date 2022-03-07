@@ -21,9 +21,13 @@ Compilator : Mingw-w64 g++ 11.2.0
 int main(void) {
 
    int n = AB;
-   printf("%d\n", n);
-   printf("%s\n", "AB");   // Since there are " it is a string and the preprocessor won't do anything here
-   printf("%i\n", F(A, B));   // %i and %d both mean signed integer
+   printf("%d\n", n);   // %i and %d both mean signed integer
+   printf("%s\n", "AB");   // Since there are " it is a string and the
+                                  // preprocessor won't do anything here, it's one
+                                  // of the three cases where the preprocessor won't
+                                  // replace the value (strings between "",
+                                  // characters between '' and identifiers).
+   printf("%i\n", F(A, B));
 
    return EXIT_SUCCESS;
 }
