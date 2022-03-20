@@ -3,7 +3,7 @@
 Filename : Ex104.c
 Author(s) : Gonçalo Heleno
 Creation date : 12/03/2022
-Description : How does each expression amount to?
+Description : How much does each expression amount to?
 Note(s) : None
 Compilator : Not applicable
 -----------------------------------------------------------------------------------

@@ -28,7 +28,7 @@ int* setBit(unsigned short pos, unsigned short bitValue, int* n) {
 
 int main(void) {
    int n = 1;
-   int new_n = *setBit(1, 1, &n);
+   int new_n = *setBit(1, 1, &n);   // Note here that you need to send n as a reference since the function only takes a pointer!
    printf("%d\n", new_n);
    return EXIT_SUCCESS;
 }
